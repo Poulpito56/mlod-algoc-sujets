@@ -1,17 +1,18 @@
-#include <stdio.h>
-#include "echangeContenu.h"
+#include <stdint.h>
+#include <stdlib.h>
 
-int main(void)
-{
-	int a=4,b=14;
+#define SIZE 5
 
-	printf ("a = %d\tb = %d\n", a, b);
+int main(void) {
+	//matrices en ligne * colonne
+	int64_t matrice1[][SIZE]={{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5},{1,2,3,4,5}};
+	int64_t matrice2[][SIZE]={{6,7,8,9,10},{6,7,8,9,10},{6,7,8,9,10},{6,7,8,9,10},{6,7,8,9,10}};
+	int64_t matriceResultat[SIZE][SIZE];
 
-	echangeContenu(&a,&b);
+	
 
-	printf ("a et b echanges \n");
-	printf ("a = %d\tb = %d\n", a, b);
+	matrix_mult(matriceResultat,matrice1,matrice2);
+	matrix_print(matriceResultat);
 
-	return 0;
+	return EXIT_SUCCESS;
 }
-
