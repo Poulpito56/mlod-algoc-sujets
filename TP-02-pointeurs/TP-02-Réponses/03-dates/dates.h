@@ -23,4 +23,5 @@ int annee;
 
 void initialiseDate(struct Date *d);
 void afficheDate(struct Date *d);
+struct Date* newDate();
 struct Date creerDateParCopie();

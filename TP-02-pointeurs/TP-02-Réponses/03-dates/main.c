@@ -13,5 +13,11 @@ int main(void) {
 	d2 = creerDateParCopie();
 	afficheDate(&d2);
 
+	struct Date *date;
+	date = newDate();
+	afficheDate(date);
+	free(date);
+	date=NULL;
+
 	return EXIT_SUCCESS;
 }
