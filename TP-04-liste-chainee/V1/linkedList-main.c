@@ -1,7 +1,7 @@
 // gcc -W -Wall -std=c99 liste-chainee.c liste-chainee-main.c -o liste-chaine-main
 // gcc -W -Wall -Wno-unused-parameter -std=c99 liste-chainee.c liste-chainee-main.c -o liste-chaine-main
 
-#include "liste-chainee.h"
+#include "linkedList.h"
 #include <stdlib.h>
 #include <stdio.h>
 

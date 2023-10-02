@@ -1,0 +1,8 @@
+{
+  "files.associations": {
+    "liste-chainee.h": "c",
+    "linkedlist.h": "c",
+    "stdlib.h": "c",
+    "stdio.h": "c"
+  }
+}
