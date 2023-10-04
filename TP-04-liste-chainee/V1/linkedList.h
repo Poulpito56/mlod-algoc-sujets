@@ -2,7 +2,7 @@
 
 #include <stdbool.h>
 
-typedef char* Element;
+typedef void* Element;
 
 struct cellule_s {
 	Element val;
