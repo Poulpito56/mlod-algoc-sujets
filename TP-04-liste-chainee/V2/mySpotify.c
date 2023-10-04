@@ -44,6 +44,7 @@ int main(void){
 	printf("estVide(l) = %s\n",estVide(l)?"TRUE":"FALSE");
 	
 	FILE* f = fopen("music.csv","r");
+	rewind(f);
 
 	printf("%i\n", numberOfMusic(f));
 
